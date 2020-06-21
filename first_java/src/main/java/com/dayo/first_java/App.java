@@ -8,7 +8,7 @@ public class App
     public static void main( String[] args )
     {
         
-     //change
+     //changes
         /*
         int discountedPrice = 0;
         int totalPrice;
