@@ -50,8 +50,9 @@ public class App {
 			 * 
 			 * /*confused int in1 = 8; System.out.println("input1=" +in1); int i; for ( int
 			 * i<=10);
-			 */
-
+		*/
+//Variables
+		
 			int row = 2;
 			int col = 2;
 			int m = 0;
@@ -86,22 +87,22 @@ public class App {
 
 				}
 			}
-			System.out.println("*************Matrix A**********");
+			System.out.println("| Matrix   A|");
 			for(int i=0; i<row; i++) {
 				for(int j=0; j<col; j++) {
 					 
 
 				System.out.println("|" + A[i][0] + "         " + A[i][1] + "|");
 
-			}
+			}System.out.println("       ");
 
-			System.out.println("*************Matrix B**********");
-			for (int i = 0; i < row; i++) {
+			System.out.println("| Matrix   B|");
+			for ( i = 0; i < row; i++) {
 
 				System.out.println("|" + B[i][0] + "         " + B[i][1] + "|");
-
 			}
-			/*
+			
+		/*
 			for (int i = 0; i < row; i++) {
 				m = (A[i][0] * B[i][0]) + (A[i][1] * B[i + 1][0]);
 				n = (A[i][0] * B[i][1]) + (A[i][1] * B[1][i + 1]);
@@ -112,16 +113,23 @@ public class App {
 				System.out.println("|" + m + "         " + n + "|");
 				System.out.println("|" + o + "         " + p + "|");
 			}*/
-			for(int i=0; i<row; i++) {
+		
+			System.out.println("       ");
+			
+			for(i=0; i<row; i++) {
 				for(int j=0; j<col; j++) {
 					for(int k=0; k<row; k++) {
-						C[i][j] +=  A[i][k]*B[k][j];
+						C[i][j] +=  A[i][k]*B[k][j];  //Multiplying matrices
 					}
 				}
 			}
-			System.out.println("|Final Matrix|");
+			System.out.println("|Final  Matrix|");
 			System.out.println("|" + C[0][0] + "         " + C[0][1] + "|");
 			System.out.println("|" + C[1][0] + "         " + C[1][1] + "|");
 		}
+		}
 	}
 }
+
+	
+
