@@ -29,10 +29,11 @@ public class contactList {
 	        Scanner number = new Scanner(System.in);
 	        b.setNumber(number.nextLine());
 	        String nName = b.getName();
+	        String nNumber = b.getNumber();
 	        	      for (Contacts contacts:contactTable) {
 	        	    	  String eName = contacts.getName();
-	        		        int eNum =	
-	        	if (nName.equalsIgnoreCase(eName)) {
+	        		        String eNum = contacts.getNumber();
+	        	if (nName.equalsIgnoreCase(eName) || nNumber.equalsIgnoreCase(eNum)) {
 	        		System.out.println("Sorry this contact already exists.");
 	        		        	}
 	        }
